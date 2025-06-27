@@ -95,6 +95,22 @@ export function Navigation() {
               <Link href="/contact" className="text-gray-700 hover:text-blue-600 transition-colors">
                 Contact
               </Link>
+              
+                {/* How it Works Dropdown */}
+            <DropdownMenu>
+              <DropdownMenuTrigger className="text-gray-700 hover:text-blue-600 transition-colors">
+                How it Works
+              </DropdownMenuTrigger>
+              <DropdownMenuContent>
+                <DropdownMenuItem asChild>
+                  <Link href="/how-it-works/donors">For Donors</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link href="/how-it-works/associations">For Associations</Link>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
+
               <div className="pt-4 border-t space-y-2">
                 <Button variant="outline" className="w-full bg-transparent" asChild>
                   <Link href="/association/login">Association Login</Link>
