@@ -5,7 +5,7 @@ import { useEffect, useState } from "react"
 import { fakeAssociations } from "@/lib/fake-data"
 
 interface Association {
-  _id: string
+  id: string
   name: string
   logo: string
   description: string
@@ -37,8 +37,11 @@ export function AssociationGrid({ searchParams }: AssociationGridProps) {
   useEffect(() => {
     const fetchAssociations = async () => {
       try {
-        // Use fake data instead of API call
-        let filteredAssociations = fakeAssociations
+        // Use fake data and convert _id to id
+        let filteredAssociations = fakeAssociations.map((assoc) => ({
+          ...assoc,
+          id: assoc._id,
+        }))
 
         if (searchParams.search) {
           const searchTerm = searchParams.search.toLowerCase()
@@ -84,7 +87,7 @@ export function AssociationGrid({ searchParams }: AssociationGridProps) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       {associations.map((association) => (
-        <AssociationCard key={association._id} association={association} />
+        <AssociationCard key={association.id} association={association} />
       ))}
     </div>
   )
