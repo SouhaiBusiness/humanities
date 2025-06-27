@@ -4,6 +4,24 @@ import { AssociationCard } from "@/components/association-card"
 import { useEffect, useState } from "react"
 import { fakeAssociations } from "@/lib/fake-data"
 
+interface Association {
+  _id: string
+  name: string
+  logo: string
+  description: string
+  category: string
+  city: string
+  status: string
+  email: string
+  phone: string
+  address: string
+  postalCode: string
+  country: string
+  website: string
+  members: number
+  createdAt: Date
+}
+
 interface AssociationGridProps {
   searchParams: {
     search?: string
@@ -13,7 +31,7 @@ interface AssociationGridProps {
 }
 
 export function AssociationGrid({ searchParams }: AssociationGridProps) {
-  const [associations, setAssociations] = useState([])
+  const [associations, setAssociations] = useState<Association[]>([])
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
