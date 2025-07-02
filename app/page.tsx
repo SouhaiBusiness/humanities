@@ -15,7 +15,7 @@ export default function HomePage({
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Discover Amazing Associations</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4" data-aos='fade-up'>Discover Amazing Associations</h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Find and support associations that align with your values and make a difference in your community.
             </p>

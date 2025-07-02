@@ -18,12 +18,12 @@ export function HeroSection() {
           {/* Left Content */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <div className="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">
+              <div className="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium" data-aos='fade-right'>
                 <Heart className="h-4 w-4 mr-2" />
                 Connecting Hearts, Creating Impact
               </div>
 
-              <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
+              <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight" data-aos='fade-right'>
                 Bridge the Gap Between
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
                   {" "}
@@ -32,7 +32,7 @@ export function HeroSection() {
                 & Donors
               </h1>
 
-              <p className="text-xl text-gray-600 leading-relaxed">
+              <p className="text-xl text-gray-600 leading-relaxed" data-aos='fade-right'>
                 Empower meaningful connections between passionate associations and generous donors. Our platform ensures
                 transparency, trust, and maximum impact for every contribution.
               </p>
@@ -94,7 +94,7 @@ export function HeroSection() {
           </div>
 
           {/* Right Content - Hero Image */}
-          <div className="relative">
+          <div className="relative" data-aos='fade-left'>
             <div className="relative z-10">
               <Image
                 src="/poepleconnecting.jpg?height=600&width=600"
@@ -106,7 +106,7 @@ export function HeroSection() {
             </div>
 
             {/* Floating cards */}
-            <div className="absolute -top-6 -left-6 bg-white p-4 rounded-xl shadow-lg z-20">
+            <div className="absolute -top-6 -left-6 bg-white p-4 rounded-xl shadow-lg z-20" data-aos='fade-right'>
               <div className="flex items-center space-x-3">
                 <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
                   <Heart className="h-5 w-5 text-blue-600" />
@@ -118,7 +118,7 @@ export function HeroSection() {
               </div>
             </div>
 
-            <div className="absolute -bottom-6 -right-6 bg-white p-4 rounded-xl shadow-lg z-20">
+            <div className="absolute -bottom-6 -right-6 bg-white p-4 rounded-xl shadow-lg z-20" data-aos='fade-left'>
               <div className="flex items-center space-x-3">
                 <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
                   <Users className="h-5 w-5 text-green-600" />

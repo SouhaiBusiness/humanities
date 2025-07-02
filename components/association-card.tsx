@@ -36,7 +36,7 @@ export function AssociationCard({ association }: AssociationCardProps) {
   const shortDescription = association.description.split(".").slice(0, 2).join(".") + "."
 
   return (
-    <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+    <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1" data-aos='fade-up'>
       <CardContent className="p-6">
         <div className="flex items-start space-x-4 mb-4">
           <div className="relative w-16 h-16 flex-shrink-0">
