@@ -13,9 +13,9 @@ export const metadata: Metadata = {
   title: "Humanities - Connecting Associations & Donors",
   description: "A platform that bridges associations with generous donors to create meaningful impact in communities.",
   icons: {
-  icon: '/favicon.ico',
-  shortcut: '/favicon.ico',
-  apple: '/favicon.ico'
+  icon: '/favicon.png',
+  shortcut: '/favicon.png',
+  apple: '/favicon.png'
 }
 }
 
